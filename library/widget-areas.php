@@ -8,6 +8,30 @@
 
 if ( ! function_exists( 'foundationpress_sidebar_widgets' ) ) :
 	function foundationpress_sidebar_widgets() {
+
+		register_sidebar(
+			array(
+				'id'            => 'header-left-widgets',
+				'name'          => __( 'header left widgets', 'foundationpress' ),
+				'description'   => __( 'Widget affichés dans la partie gauche de l\'en tête', 'foundationpress' ),
+				'before_widget' => '<section id="%1$s" class="widget %2$s">',
+				'after_widget'  => '</section>',
+				'before_title'  => '<h6>',
+				'after_title'   => '</h6>',
+			)
+		);
+		register_sidebar(
+			array(
+				'id'            => 'header-right-widgets',
+				'name'          => __( 'header right widgets', 'foundationpress' ),
+				'description'   => __( 'Widget affichés dans la partie droite de l\'en tête', 'foundationpress' ),
+				'before_widget' => '<section id="%1$s" class="widget %2$s">',
+				'after_widget'  => '</section>',
+				'before_title'  => '<h6>',
+				'after_title'   => '</h6>',
+			)
+		);
+
 		register_sidebar(
 			array(
 				'id'            => 'sidebar-widgets',

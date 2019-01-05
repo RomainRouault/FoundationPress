@@ -6,22 +6,22 @@
   }
 
   @include breakpoint(small) {
-    background: url('../images/demo/hero-bg-foundation-6-small.svg') bottom center;
+    background: url('../images/test1.jpg') bottom center;
     background-size: cover;
     background-position: bottom;
     padding: rem-calc(65%) 0;
-    margin: 0 0 rem-calc(32);
+    margin: 0 0 0;
     height: auto;
     position: relative;
     text-align: left;
   }
 
   @include breakpoint(medium) {
-    background: url('../images/demo/hero-bg-foundation-6-large.svg') bottom center;
+    background: url('../images/test1.jpg') bottom center;
     background-size: cover;
     background-position: center;
     height: rem-calc(685);
-    margin: 0 0 rem-calc(72);
+    margin: 0 0 0;
   }
 
   .watch {
