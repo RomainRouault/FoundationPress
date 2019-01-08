@@ -46,7 +46,7 @@
 .mobile-off-canvas-menu {
 
   .menu .is-active > a {
-    background-color: lighten($dark-nav-color, 5%);
+    background-color: unset;
   }
 }
 
@@ -77,7 +77,6 @@
   .menu .active > a { background-color: #ccc; }
 
   .menu>li:not(.menu-text)>a { padding: 1rem; }
-  .menu li:not(:last-child) { border-right: 1px solid #4e4e4e; }
 
   .dropdown.menu .submenu { border: 0; }
   .dropdown.menu .has-submenu.is-down-arrow a { padding-right: 1rem; }
@@ -88,6 +87,7 @@
 .site-navigation {
   @include breakpoint(small only) {
     padding: 0; // prevents container visibility on small screens
+    .menu .active > a { background-color: unset; }
   }
 }
 
