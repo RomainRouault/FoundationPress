@@ -27,6 +27,7 @@ require_once( 'library/class-foundationpress-comments.php' );
 require_once( 'library/navigation.php' );
 
 /** Add menu walkers for top-bar and off-canvas */
+require_once( 'library/class-mono-walker.php' );
 require_once( 'library/class-foundationpress-top-bar-walker.php' );
 require_once( 'library/class-foundationpress-mobile-walker.php' );
 

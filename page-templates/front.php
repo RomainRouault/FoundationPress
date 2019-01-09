@@ -3,7 +3,7 @@
 Template Name: Front
 */
 
-get_header();
+get_header('one-page');
 
 
 $menu_items = wp_get_nav_menu_items('menu-one-page');

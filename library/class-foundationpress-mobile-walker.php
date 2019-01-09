@@ -11,7 +11,7 @@
  */
 
 if ( ! class_exists( 'Foundationpress_Mobile_Walker' ) ) :
-	class Foundationpress_Mobile_Walker extends Walker_Nav_Menu {
+	class Foundationpress_Mobile_Walker extends mono_walker {
 		function start_lvl( &$output, $depth = 0, $args = array() ) {
 			$indent  = str_repeat( "\t", $depth );
 			$output .= "\n$indent<ul class=\"vertical nested menu\">\n";
