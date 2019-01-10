@@ -10,9 +10,17 @@
 ?>
 
 <footer class="footer">
-    <div class="footer-container">
-        <div class="footer-grid">
-            <?php dynamic_sidebar( 'footer-widgets' ); ?>
+    <div class="grid-container">
+        <div class="grid-x">
+        	<div class="cell medium-3 small-12 text-left">
+            	<?php dynamic_sidebar( 'footer-left-widgets' ); ?>
+        	</div>
+        	<div class="cell medium-9 small-12 text-left">
+            	<?php dynamic_sidebar( 'footer-right-widgets' ); ?>
+        	</div>
+        </div>
+        <div class="grid-x align-center">
+        	<?php dynamic_sidebar( 'footer-bottom-widgets' ); ?>
         </div>
     </div>
 </footer>
