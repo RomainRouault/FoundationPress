@@ -1,25 +1,63 @@
+//global
+
+
+h1, h2, h3, h4, h5, h6{
+    font-family: Futura-Light, OpenSans-Regular, Helvetica;
+}
+
+.full-height{
+  height: 100%;
+}
+
 // Page header
+
 .front-hero {
+  width: 100vw;
+  height: 100vh;
+
+  .black-overlay{
+      background: black;
+
+      &.ready{  
+        transition: background 1s ease-in;
+        background: unset;
+      }
+    
+  }
+
+  color: $white;
 
   @include breakpoint(small) {
-    background: url('../images/test1.jpg') bottom center;
+    background: url('../images/test2.jpg') bottom center;
     background-size: cover;
     background-position: bottom;
-    padding: rem-calc(65%) 0;
     margin: 0 0 0;
-    height: auto;
     position: relative;
     text-align: left;
   }
 
   @include breakpoint(medium) {
-    background: url('../images/test1.jpg') bottom center;
+    background: url('../images/test2.jpg') bottom center;
     background-size: cover;
     background-position: center;
     margin: 0 0 0;
   }
 
-  #adress{
+
+
+  .hero-container{
+    max-width: 95rem;
+  }
+
+    
+  .adress{
+    font-family: Futura-Light, OpenSans-Regular, Helvetica;
+    font-size: rem-calc(20);
+
+      li:not(:last-child){
+        padding-bottom: rem-calc(5);
+      }
+
 
   }
 
@@ -27,31 +65,60 @@
 
   }
 
-  #social-media{
-    font-size: rem-calc(25);
+  .social-media{
+    font-size: rem-calc(35);
 
     li:not(:last-child){
-      padding-bottom: rem-calc(10);
+      padding-bottom: rem-calc(20);
     }
   }
 
-  h1 {
-    color: #fff;
-    font-weight: 500;
+  h1.head-title{
+
+    font-weight: 300;
+    line-height: rem-calc(100);
+    margin: 0;
+    padding-bottom: rem-calc(5);
 
     @include breakpoint(small) {
-      font-size: 2.2rem;
+      font-size: rem-calc(100);
     }
 
     @include breakpoint(medium) {
-      font-size: 2.875rem;
+      font-size: rem-calc(100);
     }
   }
 
-  h4 {
+  h2.subheader{
     color: #fefefe;
     font-weight: 300;
-    font-size: 1.3125rem;
+    font-size: rem-calc(30);
+    margin: 0;
+    padding-top: rem-calc(5);
+
+    transition: all 1s ease; 
+    position: relative;
+    
+    &::before{
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0; right: 1; bottom: 0; left: 0;
+      margin-top: rem-calc(27);
+      width: 0%;
+      height: 1px;
+      background-color: $white;
+      
+    }
+
+    &.ready::before{
+      width: 30%;
+      transition: width 1s ease-out;
+      transition-delay: 0.5s;
+    }
+
+
+
   }
 
 }

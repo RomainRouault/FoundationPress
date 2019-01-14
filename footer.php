@@ -12,14 +12,14 @@
 <footer class="footer">
     <div class="grid-container">
         <div class="grid-x">
-        	<div class="cell medium-3 small-12 text-left">
+        	<div class="cell medium-3 small-12 text-left adress">
             	<?php dynamic_sidebar( 'footer-left-widgets' ); ?>
         	</div>
-        	<div class="cell medium-9 small-12 text-left">
+        	<div class="cell medium-9 small-12 text-left" id="contact-form">
             	<?php dynamic_sidebar( 'footer-right-widgets' ); ?>
         	</div>
         </div>
-        <div class="grid-x align-center">
+        <div class="grid-x align-center social-media">
         	<?php dynamic_sidebar( 'footer-bottom-widgets' ); ?>
         </div>
     </div>

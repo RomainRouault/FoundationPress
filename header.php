@@ -23,7 +23,7 @@
 	<?php endif; ?>
 
 
-	<header class="site-header" role="banner">
+	<header class="site-header full-height" role="banner">
 
         <?php get_template_part( 'template-parts/front-hero' ); ?>
         

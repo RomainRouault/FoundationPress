@@ -80,3 +80,18 @@
 
 // Templates
 @import "templates/front";
+
+// Import fonts family
+@font-face {
+  font-family: 'OpenSans-Regular';
+  src: url('../fonts/Open_Sans/OpenSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Futura-Light';
+  src: url('../fonts/Futura.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

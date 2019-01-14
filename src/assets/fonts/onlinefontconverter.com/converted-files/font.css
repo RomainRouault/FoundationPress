@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'Futura-Normal';
+  src: url('Futura-Normal.woff') format('woff'),
+       url('Futura-Normal.ttf') format('truetype'),
+       url('Futura-Normal.svg#Futura-Normal') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'futura-normal';
+  src: url('futura-normal.eot');
+  src: url('futura-normal.woff2') format('woff2'),
+       url('futura-normal.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+

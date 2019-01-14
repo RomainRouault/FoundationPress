@@ -8,4 +8,9 @@ import Foundation from 'foundation-sites';
 // the line below
 //import './lib/foundation-explicit-pieces';
 
-$(document).foundation();
+$(document).foundation().ready(
+	function() {
+	$('.black-overlay, .subheader').addClass('ready');
+
+	}
+);
