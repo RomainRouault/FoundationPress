@@ -29,7 +29,7 @@ class mono_walker extends Walker_Nav_Menu{
 
       $pathTab = explode('/',$cleanURL);
       $pathTab[sizeof($pathTab)-1] = '#'.$pathTab[sizeof($pathTab)-1];
-      $path = implode('/',$pathTab );
+      $path = $pathTab[sizeof($pathTab)-1];
 
       $attributes .= ! empty( $item->url )        ? ' href="'   . $path .'"' : '';
       $attributes .= ! empty( $item->url )        ? ' data-title="'   .   sanitize_title($item->title) .'"' : '';
@@ -43,7 +43,6 @@ class mono_walker extends Walker_Nav_Menu{
       $item_output .= $description.$args->link_after;
       $item_output .= '</a>';
       $item_output .= $args->after;
-
       $output .= apply_filters( 'walker_nav_menu_start_el', $item_output, $item, $depth, $args );
   }
 }

@@ -81,6 +81,9 @@
 // Templates
 @import "templates/front";
 
+// libs
+@import "../../../node_modules/aos/dist/aos";
+
 // Import fonts family
 @font-face {
   font-family: 'OpenSans-Regular';

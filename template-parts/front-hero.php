@@ -25,9 +25,13 @@
                     <?php dynamic_sidebar( 'header-right-widgets' ); ?>
                 </aside>
              <?php endif; ?>
-        </div>    
-    </div>
-    <div class="bottom-footer">
-        <a href="#menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 12c0-6.627-5.373-12-12-12s-12 5.373-12 12 5.373 12 12 12 12-5.373 12-12zm-18.005-1.568l1.415-1.414 4.59 4.574 4.579-4.574 1.416 1.414-5.995 5.988-6.005-5.988z"/></svg></a>
+        </div> 
+        <div class="bottom-footer grid-x cell align-center" data-magellan data-animation-easing="swing" data-animation-duration="800" data-offset="-27">
+            <a class="angle-down" href="#nav-container">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"><path d="M24.5,12.399c0-6.627-5.373-12-12-12s-12,5.373-12,12s5.373,12,12,12S24.5,19.026,24.5,12.399z M6.495,10.831L7.91,9.417
+                l4.59,4.574l4.579-4.574l1.416,1.414L12.5,16.819C12.5,16.819,6.495,10.831,6.495,10.831z"/></svg>
+            </a>
+        </div>
+   
     </div>
 </div>

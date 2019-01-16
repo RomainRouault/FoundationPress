@@ -16,16 +16,18 @@ global $wp_query;
 $wp_query = new wp_query($args);
 
 ?>
- 
-<section <?php post_class('section-divider'); ?> id="<?php echo sanitize_title($menu_item->title); ?>">
+<div id="sections">
+	<section <?php post_class('section-divider'); ?> data-magellan-target="<?php echo sanitize_title($menu_item->title); ?>" id="<?php echo sanitize_title($menu_item->title); ?>">
+		
+		<div class="grid-container">
+		<?php 
+		if ( have_posts() ){
+			include(locate_template('page-templates/home-page.php'));
+		} ?>
+		</div>
 
-<?php 
-if ( have_posts() ){
-	include(locate_template('page-templates/home-page.php'));
-} ?>
-
-</section>
-
+	</section>
+</div>
 
 <?php }};
 

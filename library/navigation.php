@@ -26,7 +26,7 @@ if ( ! function_exists( 'foundationpress_top_bar_r' ) ) {
 			array(
 				'container'      => false,
 				'menu_class'     => 'dropdown menu',
-				'items_wrap'     => '<ul id="%1$s" class="%2$s desktop-menu" data-dropdown-menu>%3$s</ul>',
+				'items_wrap'     => '<ul id="%1$s" class="%2$s desktop-menu" data-magellan data-bar-offset="40" data-dropdown-menu>%3$s</ul>',
 				'theme_location' => 'top-bar-r',
 				'depth'          => 3,
 				'fallback_cb'    => false,
@@ -48,7 +48,7 @@ if ( ! function_exists( 'foundationpress_mobile_nav' ) ) {
 				'menu'           => __( 'mobile-nav', 'foundationpress' ),
 				'menu_class'     => 'vertical menu',
 				'theme_location' => 'mobile-nav',
-				'items_wrap'     => '<ul id="%1$s" class="%2$s" data-accordion-menu data-submenu-toggle="true">%3$s</ul>',
+				'items_wrap'     => '<ul id="%1$s" class="%2$s" data-accordion-menu data-magellan data-bar-offset="40" data-submenu-toggle="true">%3$s</ul>',
 				'fallback_cb'    => false,
 				'walker'         => new Foundationpress_Mobile_Walker(),
 			)

@@ -1,6 +1,8 @@
 import $ from 'jquery';
 import whatInput from 'what-input';
+import libs from './lib/dependencies';
 
+window.libs = libs;
 window.$ = $;
 
 import Foundation from 'foundation-sites';
@@ -9,8 +11,16 @@ import Foundation from 'foundation-sites';
 //import './lib/foundation-explicit-pieces';
 
 $(document).foundation().ready(
-	function() {
-	$('.black-overlay, .subheader').addClass('ready');
 
+	//add action events on load
+	function() {
+		$('.black-overlay, .subheader').addClass('ready');
+
+		//init AOS plugin
+		libs.AOS.init({
+		  delay: 500,
+		  easing: 'ease-out',
+		  duration: 800,
+		});
 	}
 );
