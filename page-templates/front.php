@@ -15,6 +15,7 @@ $args = array('p' => $menu_item->object_id, 'post_type' => 'any');
 global $wp_query;
 $wp_query = new wp_query($args);
 
+if ($menu_item->title !== 'Contact'){ 
 ?>
 <div id="sections">
 	<section <?php post_class('section-divider'); ?> data-magellan-target="<?php echo sanitize_title($menu_item->title); ?>" id="<?php echo sanitize_title($menu_item->title); ?>">
@@ -29,6 +30,6 @@ $wp_query = new wp_query($args);
 	</section>
 </div>
 
-<?php }};
+<?php }}};
 
 get_footer();

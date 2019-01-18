@@ -51,8 +51,8 @@ if ( ! function_exists( 'foundationpress_sidebar_widgets' ) ) :
 				'description'   => __( 'Drag widgets to this footer container', 'foundationpress' ),
 				'before_widget' => '<section id="%1$s" class="widget %2$s">',
 				'after_widget'  => '</section>',
-				'before_title'  => '<h6>',
-				'after_title'   => '</h6>',
+				'before_title'  => '<h4>',
+				'after_title'   => '</h4>',
 			)
 		);
 
@@ -63,8 +63,8 @@ if ( ! function_exists( 'foundationpress_sidebar_widgets' ) ) :
 				'description'   => __( 'Drag widgets to this footer container', 'foundationpress' ),
 				'before_widget' => '<section id="%1$s" class="widget %2$s">',
 				'after_widget'  => '</section>',
-				'before_title'  => '<h6>',
-				'after_title'   => '</h6>',
+				'before_title'  => '<h4>',
+				'after_title'   => '</h4>',
 			)
 		);
 
@@ -75,10 +75,23 @@ if ( ! function_exists( 'foundationpress_sidebar_widgets' ) ) :
 				'description'   => __( 'Drag widgets to this footer container', 'foundationpress' ),
 				'before_widget' => '<section id="%1$s" class="widget %2$s">',
 				'after_widget'  => '</section>',
-				'before_title'  => '<h6>',
-				'after_title'   => '</h6>',
+				'before_title'  => '<h4>',
+				'after_title'   => '</h4>',
 			)
 		);
+
+		register_sidebar(
+			array(
+				'id'            => 'footer-top-widgets',
+				'name'          => __( 'Footer top widgets', 'foundationpress' ),
+				'description'   => __( 'Drag widgets to this footer container', 'foundationpress' ),
+				'before_widget' => '<section id="%1$s" class="widget %2$s">',
+				'after_widget'  => '</section>',
+				'before_title'  => '<h4>',
+				'after_title'   => '</h4>',
+			)
+		);
+
 	}
 
 	add_action( 'widgets_init', 'foundationpress_sidebar_widgets' );

@@ -1,7 +1,7 @@
 //global
 
 
-h1, h2, h3, h4, h5, h6, nav{
+h1, h2, h3, h4, h5, h6, nav, footer{
     font-family: Futura-Light, OpenSans-Regular, Helvetica;
 }
 
@@ -12,6 +12,30 @@ body{
 .full-height{
   height: 100%;
 }
+
+//underline animation
+h3{
+  display: inline-block;
+
+  &::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 1; right: 0; bottom: 0; left: 0;
+    margin-bottom: -3px;
+    transition: width 0.3s ease;
+    width: 0%;
+    height: 1px;
+    background-color: $black;
+  }
+
+  &.aos-animate::after{
+      width: 100%;
+      transition-delay: 0.8s !important;
+      transition: width 0.7s ease;
+    }
+
+  }
 
 // Page header
 
@@ -34,7 +58,7 @@ body{
   color: $white;
 
   @include breakpoint(small) {
-    background: url('../images/test2.jpg') bottom center;
+    background: url('../images/background-image-hero.jpg') bottom center;
     background-size: cover;
     background-position: bottom;
     margin: 0 0 0;
@@ -43,7 +67,7 @@ body{
   }
 
   @include breakpoint(medium) {
-    background: url('../images/test2.jpg') bottom center;
+    background: url('../images/background-image-hero.jpg') bottom center;
     background-size: cover;
     background-position: center;
     margin: 0 0 0;
@@ -61,7 +85,7 @@ body{
     font-size: rem-calc(20);
 
       li:not(:last-child){
-        padding-bottom: rem-calc(5);
+        padding-bottom: rem-calc(10);
       }
 
 
@@ -73,9 +97,19 @@ body{
 
   .social-media{
     font-size: rem-calc(35);
-
-    li:not(:last-child){
+    
+    li{
+      
+      transition: all 0.5s ease-in;
+      
+      &:not(:last-child){
       padding-bottom: rem-calc(20);
+      }
+
+      &:hover{
+        color : $secondary-color;
+        transition: all 0.5s ease-out;
+      }
     }
   }
 
@@ -154,44 +188,14 @@ body{
 
 }
 
-#main-nav{
-  height: 80px;
-}
-
-#main-nav, #main-nav ul{
-  background-color: $primary-color;
-  opacity: 0.95;
-}
-
-#main-nav li a{
-  color: $dark-gray;
-  font-size: rem-calc(16);
-  padding-right: rem-calc(20);
-  transition: color 0.5s ease-in;
-
-  &:first-child{
-    padding-left: 0 ;
-  }
-
-  &:hover{
-    background: none;
-    color : $secondary-color;
-    transition: color 0.5s ease-out;
-  }
-
-  &.is-active{
-    color : $secondary-color;
-    transition: color 0.5s ease-out;
-  }
-}
 
 // Section
 #sections{
 
   section{
-    background-color : $primary-color;
     padding : rem-calc(140 0);
   }
+
 
   h4 {
     padding-bottom: rem-calc(30);
@@ -202,8 +206,20 @@ body{
     font-size: rem-calc(14);
   }
 
-}
+  .post-title .page_thumbnail{
+    margin-top: rem-calc(60);
+    text-align: center;
+    padding-right:  rem-calc(40);
+  }
 
-footer{
-  margin-bottom: 800px;
+  #a-propos .post-title .page_thumbnail{
+
+    img{
+      max-width: 400px;
+      //heptagon
+      -webkit-clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+      clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+    }
+  }
+
 }

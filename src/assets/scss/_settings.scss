@@ -82,7 +82,7 @@ $medium-gray: #cecece;
 $dark-gray: #8a8a8a;
 $black: #0a0a0a;
 $white: #e8e9f3;
-$body-background: $white;
+$body-background: map-get($foundation-palette, primary);
 $body-font-color: $black;
 $body-font-family: OpenSans-Regular, Futura-Light, Helvetica, sans-serif;
 $body-antialiased: true;
