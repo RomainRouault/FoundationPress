@@ -19,10 +19,10 @@
                 <div class="cell small-12" id="contact-text" data-aos="fade-right" data-aos-delay="1000" data-aos-duration="1500">
                     <?php dynamic_sidebar( 'footer-top-widgets' ); ?>
                 </div>
-            	<div class="cell medium-4 small-12 text-left adress">
+            	<div class="cell large-4 medium-12 text-left adress">
                 	<?php dynamic_sidebar( 'footer-left-widgets' ); ?>
             	</div>
-            	<div class="cell medium-8 small-12 text-left" id="contact-form">
+            	<div class="cell large-8 medium-12 text-left" id="contact-form">
                 	<?php dynamic_sidebar( 'footer-right-widgets' ); ?>
             	</div>
             </div>

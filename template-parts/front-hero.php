@@ -14,10 +14,10 @@
                      <?php dynamic_sidebar( 'header-left-widgets' ); ?>
                  </aside>
             <?php endif; ?>
-            <div id="branding" class="cell large-6 medium-12 grid-x">
+            <div id="branding" class="cell large-6 medium-12 grid-x text-center">
                 <div>
-                    <h1 class="head-title text-left"><?php bloginfo( 'name' ); ?></h1>
-                    <h2 class="subheader text-right"><?php bloginfo( 'description' ); ?></h2>
+                    <h1 class="head-title"><?php bloginfo( 'name' ); ?></h1>
+                    <h2 class="subheader"><?php bloginfo( 'description' ); ?></h2>
                 </div>
             </div>
             <?php if ( is_active_sidebar( 'header-right-widgets' ) ) : ?>

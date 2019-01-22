@@ -27,9 +27,9 @@
 
         <?php get_template_part( 'template-parts/front-hero' ); ?>
         <div id="nav-container" data-sticky-container data-magellan data-animation-easing="swing" data-animation-duration="800">
-            <div data-sticky data-margin-top="0" data-top-anchor="header:bottom" class="sticky">
+            <div data-sticky data-margin-top="0" data-top-anchor="header:bottom" data-sticky-on="small" class="sticky">
                 <nav id="main-nav" class="site-navigation top-bar grid-x align-center" role="navigation" data-magellan-target="main-nav">
-                    <div class="site-title-bar title-bar" <?php foundationpress_title_bar_responsive_toggle(); ?>>
+                    <div id="tab-bar" data-animate="fade-in fade-out" class="site-title-bar title-bar" <?php foundationpress_title_bar_responsive_toggle(); ?>>
                         <div class="title-bar-left">
                             <button aria-label="<?php _e( 'Main Menu', 'foundationpress' ); ?>" class="menu-icon" type="button" data-toggle="<?php foundationpress_mobile_menu_id(); ?>"></button>
                         </div>

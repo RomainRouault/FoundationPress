@@ -8,7 +8,7 @@ footer{
 
   #contact-text{
     
-    padding-bottom: rem-calc(30);
+    padding-bottom: rem-calc(40);
 
     p{
       margin: 0;
@@ -16,6 +16,8 @@ footer{
   }
 
   .adress{
+    
+    padding-bottom: rem-calc(40);
 
     li:not(:last-child){
         padding-bottom: rem-calc(20);

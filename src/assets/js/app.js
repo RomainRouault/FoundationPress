@@ -22,5 +22,11 @@ $(document).foundation().ready(
 		  easing: 'ease-out',
 		  duration: 800,
 		});
+
+		//hide mobile menu on click
+		$('#mobile-menu li>a').on('click', function(){
+			$('#tab-bar').foundation('toggleMenu');
+		});
+		
 	}
 );
