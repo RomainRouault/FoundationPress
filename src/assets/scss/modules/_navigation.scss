@@ -48,6 +48,10 @@
     color : $secondary-color;
     transition: color 0.5s ease-out;
   }
+
+  @include breakpoint(small only){
+    font-size: rem-calc(25);
+  }
 }
 
 
@@ -85,6 +89,10 @@
   .menu .is-active > a {
     background-color: unset;
   }
+}
+
+#tab-bar button.hamburger .hamburger-inner,#tab-bar button.hamburger .hamburger-inner::before,#tab-bar button.hamburger .hamburger-inner::after{
+  background: $dark-gray;
 }
 
 // Tablet and desktop menu

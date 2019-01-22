@@ -31,7 +31,11 @@
                 <nav id="main-nav" class="site-navigation top-bar grid-x align-center" role="navigation" data-magellan-target="main-nav">
                     <div id="tab-bar" data-animate="fade-in fade-out" class="site-title-bar title-bar" <?php foundationpress_title_bar_responsive_toggle(); ?>>
                         <div class="title-bar-left">
-                            <button aria-label="<?php _e( 'Main Menu', 'foundationpress' ); ?>" class="menu-icon" type="button" data-toggle="<?php foundationpress_mobile_menu_id(); ?>"></button>
+                            <button aria-label="<?php _e( 'Main Menu', 'foundationpress' ); ?>" class="hamburger hamburger--spring" type="button" data-toggle="<?php foundationpress_mobile_menu_id(); ?>">
+                                  <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                  </span>
+                            </button>
                         </div>
                     </div>
                     
