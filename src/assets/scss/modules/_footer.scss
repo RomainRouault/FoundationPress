@@ -22,6 +22,11 @@ footer{
     li:not(:last-child){
         padding-bottom: rem-calc(20);
       }
+  
+    svg{
+      margin-right: rem-calc(10);
+    }
+
   }
 
   #contact-form{

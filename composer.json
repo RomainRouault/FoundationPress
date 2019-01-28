@@ -1,6 +1,6 @@
 {
-    "name": "olefredrik/foundationpress",
-    "description": "FoundationPress is a WordPress starter theme based on Foundation 6 by Zurb",
+    "name": "olefredrik/foundationpress-OnePage",
+    "description": "FoundationPress-OnePage is a fork theme based on FoundationPress itself based of Foundation 6 by Zurb -  In Dev",
     "type": "wordpress-theme",
     "minimum-stability" : "dev",
     "license": "MIT",
@@ -8,6 +8,10 @@
         {
             "name": "Ole Fredrik Lie",
             "email": "mail@olefredrik.com"
+        }
+        {
+            "name": "Romain Rouault",
+            "email": "rrouault11@gmail.com"
         }
     ],
     "require": {

@@ -17,7 +17,7 @@ while(have_posts()) : the_post(); ?>
 			?>
 		</div>
 	</div>
-	<div class="celle small-12 medium-6">
+	<div class="cell small-12 medium-6">
 		<div class=”post-content”><?php the_content(); ?></div>
 	</div>
 
